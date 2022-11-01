@@ -1,0 +1,1 @@
+# ecs-fargate-dockerhub-image-pull
