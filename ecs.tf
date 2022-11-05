@@ -9,7 +9,6 @@ resource "aws_iam_policy" "task_exec" {
   name = "${var.prefix}-policy-task-exection"
   policy = templatefile("${path.module}/policy_document/iam_ecs_task.json",{
     secret_arn = aws_secretsmanager_secret.dockerhub.arn
-    key_arn = data.aws_kms_alias.secrets_manager.arn
   })
 }
 
