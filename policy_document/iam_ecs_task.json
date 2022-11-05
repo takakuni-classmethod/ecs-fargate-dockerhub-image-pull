@@ -4,12 +4,10 @@
     {
       "Effect": "Allow",
       "Action": [
-        "kms:Decrypt",
         "secretsmanager:GetSecretValue"
       ],
       "Resource": [
-        "${secret_arn}",
-        "${key_arn}"
+        "${secret_arn}"
       ]
     }
   ]
